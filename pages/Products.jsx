@@ -1,10 +1,14 @@
 import React from 'react'
+import MainNavbar from '../Components/MainNavbar'
 
 const Products = () => {
     return (
-        <div>
-            <h1>Lista prodotti</h1>
-        </div>
+        <>
+            <MainNavbar />
+            <div>
+                <h1>Lista prodotti</h1>
+            </div>
+        </>
     )
 }
 

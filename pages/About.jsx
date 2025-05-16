@@ -1,10 +1,14 @@
 import React from 'react'
+import MainNavbar from '../Components/MainNavbar'
 
 const about = () => {
     return (
-        <div>
-            <h1>Chi siamo</h1>
-        </div>
+        <>
+            <MainNavbar />
+            <div>
+                <h1>Chi siamo</h1>
+            </div>
+        </>
     )
 }
 

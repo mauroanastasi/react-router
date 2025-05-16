@@ -1,10 +1,14 @@
 import React from 'react'
+import MainNavbar from '../Components/MainNavbar'
 
 const homepage = () => {
     return (
-        <div>
-            <h1>Homepage</h1>
-        </div>
+        <>
+            <MainNavbar />
+            <div>
+                <h1>Homepage</h1>
+            </div>
+        </>
     )
 }
 
