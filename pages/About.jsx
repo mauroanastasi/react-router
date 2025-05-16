@@ -1,6 +1,7 @@
 import React from 'react'
 import MainNavbar from '../Components/MainNavbar'
 
+
 const about = () => {
     return (
         <>
