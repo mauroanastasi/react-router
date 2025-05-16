@@ -19,3 +19,18 @@
     transform: rotate(360deg);
   }
 }
+
+li .active {
+  font-weight: 700;
+  color: #40eaba;
+}
+
+.custom {
+  font-size: x-large;
+  color: black;
+  text-decoration: none;
+}
+
+li:hover {
+  font-weight: 700;
+}

@@ -24,11 +24,11 @@ const MainNavbar = () => {
 
         <header>
             <nav>
-                <ul>
+                <ul className='list-unstyled m-5' >
                     {links.map((link, index) => {
                         return (
                             <li key={index}>
-                                <NavLink to={link.path}>{link.label}</NavLink>
+                                <NavLink className='custom' to={link.path}>{link.label}</NavLink>
                             </li>
                         )
                     })}
