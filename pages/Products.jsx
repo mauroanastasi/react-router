@@ -24,7 +24,7 @@ const Products = () => {
                     </div>
 
                     {products === null ? (
-                        <div>Loading..</div>
+                        <span class="loader"></span>
                     ) : (
                         <div className="row g-3">
                             {products.map((product) => {
