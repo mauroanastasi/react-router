@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Products from '../pages/Products'
-
+import Homepage from '../pages/Homepage'
+import About from '../pages/About'
 
 
 function App() {
