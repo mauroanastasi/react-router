@@ -12,7 +12,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' Component={Homepage} />
-          <Route path='/products' Component={Products} />
+          <Route path='/products'>
+            <Route index Component={Products} />
+            <Route path=":id" Component={DetailProduct} />
+          </Route>
           <Route path='/about' Component={About} />
         </Routes>
       </BrowserRouter>
