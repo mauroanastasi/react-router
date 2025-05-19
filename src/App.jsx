@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Products from '../pages/Products'
 import Homepage from '../pages/Homepage'
 import About from '../pages/About'
-
+import DetailProduct from '../Components/DetailProduct'
 
 function App() {
 
@@ -12,10 +12,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' Component={Homepage} />
-          <Route path='/products'>
-            <Route index Component={Products} />
-            <Route path=":id" Component={DetailProduct} />
-          </Route>
+          <Route path='/products' Component={Products} />
+          <Route path="/products/:id" Component={DetailProduct} />
           <Route path='/about' Component={About} />
         </Routes>
       </BrowserRouter>

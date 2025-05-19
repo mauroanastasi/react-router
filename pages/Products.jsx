@@ -31,7 +31,7 @@ const Products = () => {
                                 return (
                                     <div className="col-12 col-md-6 col-lg-4" key={product.id} >
                                         <div className="card">
-                                            <NavLink to={`/products/&{product.is}`}>
+                                            <NavLink to={`/products/${product.id}`}>
                                                 <div className="card-image-top">
                                                     <img src={product.image} className="img-fluid" alt="" />
                                                 </div>

@@ -1,13 +1,20 @@
-import React from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import axios from 'axios';
 
 const DetailProduct = () => {
     const { id } = useParams();
 
-    return (
-        <div>
+    const [product, setProduct] = useState({})
 
-        </div>
+    const getSingleProduct = () => {
+        axios.get(`https://fakestoreapi.com/products/${id}`).then((resp) => {
+            setProduct(resp.data)
+        });
+    }
+
+    return (
+
     )
 }
 
