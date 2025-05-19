@@ -2,7 +2,7 @@ import React from 'react'
 import MainNavbar from '../Components/MainNavbar'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-
+import { NavLink } from 'react-router-dom'
 const Products = () => {
 
     const [products, setProducts] = useState(null);
@@ -31,15 +31,17 @@ const Products = () => {
                                 return (
                                     <div className="col-12 col-md-6 col-lg-4" key={product.id} >
                                         <div className="card">
-                                            <div className="card-image-top">
-                                                <img src={product.image} className="img-fluid" alt="" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h3>{product.title}</h3>
+                                            <NavLink to={`/products/&{product.is}`}>
+                                                <div className="card-image-top">
+                                                    <img src={product.image} className="img-fluid" alt="" />
+                                                </div>
+                                                <div className="card-body">
+                                                    <h3>{product.title}</h3>
 
-                                                <p>{product.price}</p>
-                                                <p>{product.description}</p>
-                                            </div>
+                                                    <p>{product.price}</p>
+                                                    <p>{product.description}</p>
+                                                </div>
+                                            </NavLink>
                                         </div>
                                     </div>
                                 );
