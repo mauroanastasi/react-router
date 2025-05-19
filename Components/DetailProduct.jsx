@@ -13,8 +13,24 @@ const DetailProduct = () => {
         });
     }
 
-    return (
+    useEffect(() => {
+        getSingleProduct()
+    }, [])
 
+    return (
+        <div className="container">
+            <div className="row">
+                <div className="col-12">
+                    <h1>Dettaglio Prodotto</h1>
+                </div>
+                <div className="col-12">
+                    <img src={product.image} alt="" className='fixed-dim-img' />
+                    <h2>{product.title}</h2>
+                    <p>{product.price}</p>
+                    <p>{product.description}</p>
+                </div>
+            </div>
+        </div>
     )
 }
 
